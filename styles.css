@@ -99,3 +99,67 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Responsivo para dispositivos com largura menor que 768px */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .slide {
+        width: 160px;
+        height: 160px;
+    }
+
+    .slide img {
+        width: 36px;
+        height: 36px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #sobre p {
+        font-size: 0.95rem;
+    }
+
+    nav ul li a {
+        font-size: 0.95rem;
+    }
+
+    .projeto {
+        font-size: 0.95rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra: melhor adaptação para dispositivos MUITO pequenos (até 480px) */
+@media (max-width: 480px) {
+    .slide {
+        width: 130px;
+        height: 130px;
+    }
+
+    .slide img {
+        width: 30px;
+        height: 30px;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    section {
+        padding: 15px 10px;
+        margin: 10px;
+    }
+}
