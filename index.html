@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Marcos Antônio Silva</h1>
+        <p>Desenvolvedor Web | Programador | Entusiasta de Tecnologia</p>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <div class="slide">
+            <img src="image/icons8-html-5-48.png" alt="HTML">
+            <img src="image/icons8-css3-48.png" alt="CSS">
+            <img src="image/icons8-javascript-48.png" alt="JS">
+            <img src="image/icons8-php-64.png" alt="PHP">
+            <img src="image/icons8-python-48.png" alt="Python">
+        </div>
+    </div>
+    
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou um desenvolvedor web apaixonado por criar soluções inovadoras. Tenho experiência em HTML, CSS, JavaScript, PHP e Python</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projeto">
+            <h3>Projeto 1</h3>
+            <p>Descrição do projeto 1. <a href="#">Ver projeto</a></p>
+        </div>
+        <div class="projeto">
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto 2. <a href="#">Ver projeto</a></p>
+        </div>
+        <div class="projeto">
+            <h3>Projeto 3</h3>
+            <p>Descrição do projeto 3. <a href="#">Ver projeto</a></p>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="contatoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Marcos Antônio Silva. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

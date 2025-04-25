@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.slider {
+    perspective: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: -35px 0;
+}
+
+.slide {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotateCarousel 10s linear infinite;
+}
+
+.slide:hover {
+    animation-play-state: paused;
+}
+
+.slide img {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Distribui as imagens em círculo */
+.slide img:nth-child(1) { transform: rotateY(0deg) translateZ(150px); }
+.slide img:nth-child(2) { transform: rotateY(72deg) translateZ(150px); }
+.slide img:nth-child(3) { transform: rotateY(144deg) translateZ(150px); }
+.slide img:nth-child(4) { transform: rotateY(216deg) translateZ(150px); }
+.slide img:nth-child(5) { transform: rotateY(288deg) translateZ(150px); }
+
+/* Animação de rotação */
+@keyframes rotateCarousel {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(-360deg); }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#sobre p {
+    display: flex;
+    justify-content: center;
+}
+
+.projeto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
